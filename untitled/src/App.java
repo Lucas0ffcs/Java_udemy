@@ -22,5 +22,8 @@ public class App {
         double media = soma/n;
         System.out.println("O preço médio dos produtos é: " + media);
 
+
+        IntegerList a
+
     }
 }
