@@ -17,7 +17,7 @@ public class Busca {
     }
     public static void near(int i, int j, int[][] matriz, int m, int n){
         if(!(j-1<0)){//ESQUERDA
-            System.out.println("Left: " + matriz[i][j-1]);
+                System.out.println("Left: " + matriz[i][j-1]);
         }
         if(!(j+1==n)){//DIREITA
             System.out.println("Right: " + matriz[i][j+1]);
@@ -25,7 +25,7 @@ public class Busca {
         if(!(i-1<0)){//CIMA
             System.out.println("Up: " + matriz[i-1][j]);
         }
-        if(!(i+1==m)){//CIMA
+        if(!(i+1==m)){//BAIXO
             System.out.println("Down: " + matriz[i+1][j]);
         }
 

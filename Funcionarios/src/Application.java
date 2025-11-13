@@ -7,7 +7,7 @@ public static void main(String args[]) {
     List<Employee> list = new ArrayList<>();
 
     for (int i = 1; i <= n; i++) {
-        System.out.println("Employee #" + i);
+        System.out.println("\nEmployee #" + i);
         System.out.print("Id: ");
         int id = sc.nextInt();
         sc.nextLine();
@@ -16,9 +16,11 @@ public static void main(String args[]) {
 
         System.out.print("Salary: ");
         double salary = sc.nextDouble();
-        ((ArrayList<Employee>) list).add(new Employee(id, name, salary));
-    }
 
+        Employee emp = new Employee(id, name, salary);
+        list.add(emp);
+    }
+    String errormsg = "This id does not exist!";
     System.out.print("Enter the employee id who will have salary increase: ");
     int xId = sc.nextInt();
     Employee delta = list.stream().filter(x -> x.getId() == xId).findFirst().orElse(null);
