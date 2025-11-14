@@ -49,9 +49,7 @@ public class Worker {
         return contracts;
     }
 
-    public void setContracts(List<HourContract> contracts) {
-        this.contracts = contracts;
-    }
+
 
     public Department getDepartment() {
         return department;
