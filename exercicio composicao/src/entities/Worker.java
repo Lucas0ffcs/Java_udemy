@@ -33,7 +33,7 @@ public class Worker {
     //MÉTODOS
 
     void addContract(HourContract contract){
-        //prencher
+        contracts.add(contract);
     }
 
     void removeContract(HourContract contract){
