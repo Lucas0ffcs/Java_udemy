@@ -1,9 +1,24 @@
 package entities;
 
+import entities.enums.WorkerLevel;
+
+import java.util.List;
+
 public class Worker {
+
+    //atributos basicos
     private String name;
     private WorkerLevel level;
     private Double baseSalary;
+
+    //associações (flechas na notação UML
+    // 1 worker tem 1 department
+    private Department department;
+
+    // mas 1 worker tem varios contracts: deve ser usado lista
+
+    private List<HourContract> contracts;
+
 
     public Worker(String name, Double basesalary, String level){
     }
