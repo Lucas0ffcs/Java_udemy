@@ -10,7 +10,7 @@ import entities.enums.WorkerLevel;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
-import java.time.LocalDate;
+import java.util.Date;
 
 
 public class Program {
@@ -34,7 +34,8 @@ public class Program {
         System.out.println("Base salary: ");
         Double basesalary = sc.nextDouble();
 
-        Worker wk1= new Worker(name, basesalary, level);
+        Worker wk1= new Worker(name, basesalary, level);//REVISAR
+
         System.out.println("How many contracts to this worker? ");
         int z;
         z = sc.nextInt();
@@ -42,7 +43,7 @@ public class Program {
             System.out.println("Enter contract #" + i + " data: ");
 
             System.out.println("Date (DD/MM/YYYY): ");
-            LocalDate date = LocalDate.parse(sc.nextLine(), formatter);
+            //IMPLEMENTAR VARIAVEL DATE
 
             System.out.println("Value per hour: ");
             Double valuePerHour = sc.nextDouble();
@@ -50,7 +51,7 @@ public class Program {
             System.out.println("Duration (hours): ");
             Integer hours = sc.nextInt();
 
-            HourContract contract = new HourContract(date, hours, valuePerHour);
+            //HourContract contract = new HourContract(date, hours, valuePerHour);
             int x = 1;
 
 
