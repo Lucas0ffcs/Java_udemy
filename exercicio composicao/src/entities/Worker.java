@@ -45,6 +45,43 @@ public class Worker {
         //preencher
     }
 
+    public List<HourContract> getContracts() {
+        return contracts;
+    }
 
+    public void setContracts(List<HourContract> contracts) {
+        this.contracts = contracts;
+    }
 
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public Double getBaseSalary() {
+        return baseSalary;
+    }
+
+    public void setBaseSalary(Double baseSalary) {
+        this.baseSalary = baseSalary;
+    }
+
+    public WorkerLevel getLevel() {
+        return level;
+    }
+
+    public void setLevel(WorkerLevel level) {
+        this.level = level;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
