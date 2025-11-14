@@ -37,7 +37,7 @@ public class Worker {
     }
 
     void removeContract(HourContract contract){
-        //preencher
+        contracts.remove(contract);
     }
 
 
