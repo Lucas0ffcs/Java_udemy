@@ -11,7 +11,6 @@ import java.util.List;
 public class Program {
     public static void main(String[] args) {
 
-        List<Post> posts = new ArrayList<>();
 
         LocalDate post1Date = LocalDate.of(2018, 06, 21);
         String post1Tilte = "Traveling to New Zealand";
@@ -19,7 +18,6 @@ public class Program {
         int post1Likes = 12;
         Comment post1Comment1 = new Comment("Have a nice trip.");
         Comment post1Comment2 = new Comment("Wow that's awesome!");
-
 
 
         LocalDate post2Date = LocalDate.of(2018, 07, 28);
@@ -30,30 +28,39 @@ public class Program {
         Comment post2Comment2 = new Comment("May the Force be with you");
 
 
+        Post post1 = new Post(post1Date, post1Tilte, post1Content, post1Likes);
+        post1.addComment(post1Comment1);
+        post1.addComment(post1Comment2);
 
-
-
-
-        posts.add( new Post(post1Date, post1Tilte, post1Content, post1Likes));
-        posts[0].addComment(post1Comment1);
-        posts[0].addComment(post1Comment2);
-
-        posts[0]
-
-        posts.add( new Post(post2Date, post2Tilte, post2Content, post2Likes));
-        posts[1].addComment(post2Comment1);
-        posts[1].addComment(post2Comment2);
+        Post post2 = new Post(post2Date, post2Tilte, post2Content, post2Likes);
+        post2.addComment(post2Comment1);
+        post2.addComment(post2Comment2);
 
 
         System.out.println(post1.getTitle());
         System.out.println(post1.getLikes() + " Likes - " + post1.getMoment());
         System.out.println(post1.getContent());
         System.out.println("Comments:");
+
+
+
         for(Comment c : post1.getPostComments()){
             System.out.println(c.getText());
 
         }
 
+        System.out.println();
+        System.out.println();
+
+
+        System.out.println(post2.getTitle());
+        System.out.println(post2.getLikes() + " Likes - " + post2.getMoment());
+        System.out.println(post2.getContent());
+        System.out.println("Comments:");
+        for(Comment c : post2.getPostComments()){
+            System.out.println(c.getText());
+
+        }
 
 
 
