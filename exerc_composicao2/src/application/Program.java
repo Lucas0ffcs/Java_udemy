@@ -13,10 +13,10 @@ public class Program {
         System.out.println("Enter client data: ");
 
         System.out.println("Name: ");
-        String clientName = sc.next();
+        String clientName = sc.nextLine();
 
         System.out.println("Email: ");
-        String clientEmail = sc.next();
+        String clientEmail = sc.nextLine();
 
 
         Client client1 = new Client(clientName, clientEmail);
@@ -24,11 +24,12 @@ public class Program {
 
         System.out.print("How many items in the order? ");
         int z = sc.nextInt();
-
+        sc.nextLine();
         for (int i = 1; i<=z; i++){
             System.out.println("Enter item #" + i + " data:");
+
             System.out.println("Item name: ");
-            String itemName = sc.next();
+            String itemName = sc.nextLine();
 
             System.out.println("Price: ");
             Double itemPrice = sc.nextDouble();
