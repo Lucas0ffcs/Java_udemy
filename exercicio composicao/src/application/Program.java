@@ -21,7 +21,7 @@ public class Program {
 
 
         System.out.println("Enter department's name: ");
-        Department dp1 = new Department(sc.nextLine());
+        String departmentName = sc.nextLine();
 
         System.out.println("Enter worker data:");
 
@@ -34,7 +34,10 @@ public class Program {
         System.out.println("Base salary: ");
         Double basesalary = sc.nextDouble();
 
+
         Worker wk1= new Worker(name, basesalary, level);//REVISAR
+        Department department = new Department(departmentName);
+
 
         System.out.println("How many contracts to this worker? ");
         int z;
