@@ -33,16 +33,16 @@ public class Worker {
 
     //MÉTODOS
 
-    void addContract(HourContract contract){
+    public void addContract(HourContract contract){
         contracts.add(contract);
     }
 
-    void removeContract(HourContract contract){
+    public void removeContract(HourContract contract){
         contracts.remove(contract);
     }
 
 
-    Double income(Integer year, Integer month){
+    public Double income(Integer year, Integer month){
         double sum = baseSalary;
 
         Calendar cal = Calendar.getInstance();
@@ -57,6 +57,7 @@ public class Worker {
                 sum += c.totalValue();
             }
         }
+        return sum;
     }
 
 
