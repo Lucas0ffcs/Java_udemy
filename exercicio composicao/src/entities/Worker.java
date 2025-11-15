@@ -24,7 +24,7 @@ public class Worker {
     public Worker(){
     }
     //Não adicionar atributos do tipo lista no construtor
-    public Worker(Department department, Double baseSalary, WorkerLevel level, String name) {
+    public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
         this.department = department;
         this.baseSalary = baseSalary;
         this.level = level;

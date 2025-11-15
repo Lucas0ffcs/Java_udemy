@@ -29,14 +29,14 @@ public class Program {
         String name = sc.nextLine();
 
         System.out.println("Level: ");
-        String level = String.valueOf(WorkerLevel.valueOf(sc.nextLine()));
+        String level = sc.nextLine();
 
         System.out.println("Base salary: ");
         Double basesalary = sc.nextDouble();
 
 
-        Worker wk1= new Worker(name, basesalary, level);//REVISAR
-        Department department = new Department(departmentName);
+        Worker wk1= new Worker(name,  WorkerLevel.valueOf(level), basesalary, new Department(departmentName));//REVISAR
+
 
 
         System.out.println("How many contracts to this worker? ");
