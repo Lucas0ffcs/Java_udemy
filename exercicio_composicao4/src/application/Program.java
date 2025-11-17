@@ -7,6 +7,11 @@ public class Program {
         Scanner sc = new Scanner(System.in);
 
 
+        System.out.println("Enter client data:");
+        System.out.println("Name: ");
+        System.out.println("Email: ");
+        System.out.println("Birth date (DD/MM/YYYY): ");
+
 
 
 
