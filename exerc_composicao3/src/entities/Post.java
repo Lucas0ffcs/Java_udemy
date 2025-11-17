@@ -74,4 +74,20 @@ public class Post {
     }
 
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(title + "\n");
+        sb.append(likes);
+        sb.append(" Likes - ");
+        sb.append((moment) + "\n");
+        sb.append(content + "\n");
+        sb.append("Comments:\n");
+
+        for (Comment c : postComments) {
+            sb.append(c.getText() + "\n");
+        }
+
+        return sb.toString();
+    }
 }

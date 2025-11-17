@@ -37,40 +37,12 @@ public class Program {
         post2.addComment(post2Comment2);
 
 
-        System.out.println(post1.getTitle());
-        System.out.println(post1.getLikes() + " Likes - " + post1.getMoment());
-        System.out.println(post1.getContent());
-        System.out.println("Comments:");
-
-
-
-        for(Comment c : post1.getPostComments()){
-            System.out.println(c.getText());
-
-        }
+        System.out.println(post1);
 
         System.out.println();
         System.out.println();
 
-
-        System.out.println(post2.getTitle());
-        System.out.println(post2.getLikes() + " Likes - " + post2.getMoment());
-        System.out.println(post2.getContent());
-        System.out.println("Comments:");
-        for(Comment c : post2.getPostComments()){
-            System.out.println(c.getText());
-
-        }
-
-
-
-
-
-
-
-
-
-
+        System.out.println(post2);
 
 
     }
